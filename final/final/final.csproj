@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6F8FD37-3770-4F84-9BDC-E6C0A3F74E3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aksam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aksam.Designer.cs">
+      <DependentUpon>aksam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buton1haber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buton1haber.Designer.cs">
+      <DependentUpon>buton1haber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="haberturk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="haberturk.Designer.cs">
+      <DependentUpon>haberturk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sabah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sabah.Designer.cs">
+      <DependentUpon>sabah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sozcu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sozcu.Designer.cs">
+      <DependentUpon>sozcu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="takvim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="takvim.Designer.cs">
+      <DependentUpon>takvim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="milliyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>milliyet.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posta.Designer.cs">
+      <DependentUpon>posta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenicag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenicag.Designer.cs">
+      <DependentUpon>yenicag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Üyeol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Üyeol.Designer.cs">
+      <DependentUpon>Üyeol.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aksam.resx">
+      <DependentUpon>aksam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buton1haber.resx">
+      <DependentUpon>buton1haber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="haberturk.resx">
+      <DependentUpon>haberturk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sabah.resx">
+      <DependentUpon>sabah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sozcu.resx">
+      <DependentUpon>sozcu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="takvim.resx">
+      <DependentUpon>takvim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="milliyet.resx">
+      <DependentUpon>milliyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posta.resx">
+      <DependentUpon>posta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenicag.resx">
+      <DependentUpon>yenicag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Üyeol.resx">
+      <DependentUpon>Üyeol.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haberturk-tv-ve-gazete-logo-E6E5B3CEE6-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haberturk-tv-ve-gazete-logo-E6E5B3CEE6-seeklogo.com1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erdek.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Akşam_Gazetesi_logosu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sozcu-gazetesi-sozcu-com-tr1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-user-male-skin-type-1-and-2-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-politics-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-author-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-soccer-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-agenda-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-earth-planet-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-last-24-hours-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-economy-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-economy-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-last-24-hours-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-economy-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
